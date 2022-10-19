@@ -10,7 +10,7 @@ export const Container = styled(Box)({
     height: '100vh',
 });
 
-export const Board = styled(Box)({
+export const BoardContainer = styled(Box)({
     maxWidth: 'calc(100vw - 80px)',
     overflow: 'auto',
     position: 'relative',
