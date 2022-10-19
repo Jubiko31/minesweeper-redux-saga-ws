@@ -1,12 +1,17 @@
 import { configureStore, ThunkAction, Action } from "@reduxjs/toolkit";
 import createSagaMiddleware from "@redux-saga/core";
 import { boardReducer } from './reducers/gameReducer'
+import { startReducer } from "./reducers/startReducer";
+import { playReducer } from "./reducers/playReducer";
+import { watcherSaga } from "./saga/rootSaga";
 
 const sagaMiddleware = createSagaMiddleware();
 
 const store = configureStore({
     reducer: {
         board: boardReducer,
+        option: startReducer,
+        play: playReducer,
     },
     middleware: (getDefaultMiddleware) => {
         return [...getDefaultMiddleware({
@@ -18,7 +23,7 @@ const store = configureStore({
     },
 });
 
-// sagaMiddleware.run()
+sagaMiddleware.run(watcherSaga);
 
 export default store;
 
