@@ -2,7 +2,7 @@
 import { fork, apply, call, put, take } from 'redux-saga/effects';
 import { eventChannel } from 'redux-saga';
 import { Client } from '../../lib/client';
-import {setMap, setMessage, setStatus } from '../reducers/gameReducer';
+import {setMap, setStatus } from '../reducers/gameReducer';
 
 function createSocketChannel(socket: WebSocket) {
     return eventChannel((emit: (input: string | Error) => void) => {
@@ -36,6 +36,7 @@ export function* watchOnGame(): any {
     while(1) {
         try {
             const data = yield take(channel);
+            console.log('COME HERE', data)
             if (data.includes('map:')) {
                 yield put(setMap(data));
             }
@@ -43,8 +44,7 @@ export function* watchOnGame(): any {
                 yield fork(getGameBoard, socket);
             }
             if (data.includes('open:')) {
-                yield put(setMessage(data.split('open: ')[1]));
-                yield put(setStatus(data.split('open:')[1]));
+                yield put(setStatus(data.split('open: ')[1]));
                 yield fork(getGameBoard, socket);
             }
         } catch(err) {

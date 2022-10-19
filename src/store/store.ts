@@ -19,7 +19,7 @@ const store = configureStore({
         }), sagaMiddleware];
     },
     devTools: {
-        trace: process.env.NODE_ENV !== 'development',
+        trace: process.env.REACT_APP_NODE_ENV !== 'development',
     },
 });
 

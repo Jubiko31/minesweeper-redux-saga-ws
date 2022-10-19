@@ -9,7 +9,7 @@ interface BoardState {
 }
 
 const MapPayload = (payload: any): string[] => {
-    const rows = payload.split('map: ')[1].split['\n'];
+    const rows = payload.split('map:')[1].split('\n');
     return rows.filter((item: string[]) => Boolean(item.length));
 }
 
