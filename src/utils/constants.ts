@@ -1,1 +1,1 @@
-export const WEBSOCKET_URL = process.env.REACT_APP_WEBSOCKET_URL
+export const WEBSOCKET_URL = 'ws://hometask.eg1236.com/game1/'

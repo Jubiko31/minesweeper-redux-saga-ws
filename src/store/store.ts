@@ -1,6 +1,6 @@
 import { configureStore, ThunkAction, Action } from "@reduxjs/toolkit";
 import createSagaMiddleware from "@redux-saga/core";
-import { boardReducer } from '../board/reducers'
+import { boardReducer } from './reducers/gameReducer'
 
 const sagaMiddleware = createSagaMiddleware();
 
