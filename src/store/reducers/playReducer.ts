@@ -1,19 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit';
-
-type TStatus = 'success' | 'failed' | 'default';
-interface CellProps {
-    key: string;
-    text: string;
-    disabled: boolean;
-    isFlag: boolean;
-    onClick: () => void;
-    onSetFlag: () => void;
-}
-
 interface PlayState {
     flags: Array<Array<number>>;
 }
-
 interface ActionType {
     payload: Record<string, number>;
 }
