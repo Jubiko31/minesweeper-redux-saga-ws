@@ -4,7 +4,7 @@ This is Advanced Minesweeper game with TS.
 
 View project:
 
-www.example.com //not ready yet
+https://minesweeper-juba.netlify.app/
 
 
 ### `Stack: ReactJS, Redux + RTK, Redux-Saga, Material UI, TypeScript, Websocket`
