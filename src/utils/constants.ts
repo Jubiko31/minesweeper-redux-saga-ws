@@ -1,1 +1,1 @@
-export const WEBSOCKET_URL = 'ws://hometask.eg1236.com/game1/'
+export const WEBSOCKET_URL = 'wss://hometask.eg1236.com/game1/'
