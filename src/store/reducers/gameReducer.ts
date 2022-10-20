@@ -36,7 +36,7 @@ const BoardSlice = createSlice({
         setStatus(state: BoardState, action) {
             const status = action.payload as string;
             state.status =
-                status === '' || status === 'OK' ? -1 : status === 'You Lose' ? 0 : 1;
+                status === '' || status === 'OK' ? -1 : status === 'You lose' ? 0 : 1;
         },
     },
 });

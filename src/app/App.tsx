@@ -6,7 +6,7 @@ import { Container, BoardContainer, Message } from '../common/styles/App.styles'
 
 const App = () => {
   const { status } = useSelector((state: RootState) => state.board);
-  const message = status === 0 ? ' Victory!' : status === 1 ? 'Game Over.' : '';
+  const message = status === 0 ? 'Game Over.' : status === 1 ? 'Victorious!' : '';
   return (
     <Container>
       <Header />
