@@ -1,46 +1,41 @@
-# Getting Started with Create React App
+# Minesweeper though Websocket + Redux-Saga
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is Advanced Minesweeper game with TS.
 
-## Available Scripts
+View project:
 
-In the project directory, you can run:
+www.example.com //not ready yet
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### `Stack: ReactJS, Redux + RTK, Redux-Saga, Material UI, TypeScript, Websocket`
+![typescript](https://user-images.githubusercontent.com/53910160/196903147-5a87a3cf-19e9-4c73-9aba-04ad57edd411.png) &nbsp; 
+![react](https://user-images.githubusercontent.com/53910160/188648232-4b64538e-aba0-497f-ae02-e6832d5477c5.png) &nbsp;
+![redux_1_50](https://user-images.githubusercontent.com/53910160/189751514-7fb97131-f9dc-440b-913b-8a2db88c591d.png) &nbsp;
+![redux-saga](https://user-images.githubusercontent.com/53910160/196902383-af69bc0e-7ee8-40fd-afd2-020f76d13891.png) &nbsp;
+![mui](https://user-images.githubusercontent.com/53910160/189752984-de15336a-8127-41f8-98a1-0c7cf7c34a8e.png)
+![websocket](https://user-images.githubusercontent.com/53910160/196903773-cd8189a2-a61f-49ce-9062-0140d31f8a9e.png)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<br />
 
-### `npm test`
+## Description
+The game (Minesweeper) is played by connection to the websocket 
+`hometask.eg1236.com/game1/`
+and sending specific commands to it. Try sending single word "help" to retrieve the documentation of the game API. Note you need to keep the same websocket connection open while playing the game.
+<br />
+## Packages used:
+  redux && redux-toolkit && redux-saga
+  ```sh
+  $ npm install react-redux @reduxjs/toolkit redux-saga
+  
+  ```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  mui
+  
+  ```sh
+  $ npm install @mui/material @emotion/react @emotion/styled
+  
+  ```
+<br />
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Quick visual view:
+![win](https://user-images.githubusercontent.com/53910160/196909907-cc88eed3-3cb9-4de0-b8f9-955349dffdac.png)
