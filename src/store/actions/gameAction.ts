@@ -36,7 +36,6 @@ export function* watchOnGame(): any {
     while(1) {
         try {
             const data = yield take(channel);
-            console.log('COME HERE', data)
             if (data.includes('map:')) {
                 yield put(setMap(data));
             }

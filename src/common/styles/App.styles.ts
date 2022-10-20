@@ -25,5 +25,6 @@ export const Message = styled(Box)(({ status }: { status: number }) => ({
     fontSize: 42,
     fontWeight: 'bold',
 
-    color: status === 0 ? 'red' : 'blue',
+    color: status === 0 ? '#dc143c' : '#03c04a',
+    zIndex: 1
 }));

@@ -1,3 +1,4 @@
+import React from 'react';
 import { MouseEvent } from 'react';
 import { CellBox } from '../styles/Cell.styles';
 
@@ -53,4 +54,4 @@ const Cell = ({
     );
 };
 
-export default Cell;
+export default React.memo(Cell);
