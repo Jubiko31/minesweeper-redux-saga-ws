@@ -2,8 +2,8 @@
 
 This is Advanced Minesweeper game with TS.
 
-View project:
-
+View project: (update: game won't work because netlify doesn't support http)
+ 
 https://minesweeper-juba.netlify.app/
 
 
